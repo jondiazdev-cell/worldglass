@@ -26,7 +26,11 @@
         <div class="container">
             <img src="logo.png" alt="Logo Parabrisas World Glass" class="logo">
 
-            <nav class="nav">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <nav class="nav" id="nav">
                 <ul>
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#services">Servicios</a></li>
@@ -141,7 +145,7 @@
                 <img class="brand-logo" src="img/volvo.png" alt="Volvo">
             </div>
         </div>
-    </section >
+    </section>
 
 
     <section class="branches reveal" id="branches">
@@ -162,7 +166,8 @@
                 <div class="branch-info">
                     <h3>Concepción</h3>
                     <p>Servicio completo de venta e instalación de vidrios automotrices.</p>
-                    <a href="https://api.whatsapp.com/send?phone=56964764763&text=Hola%21%20Quisiera%20más%20información" class="btn whatsapp" target="_blank">WhatsApp Sucursal</a>
+                    <a href="https://api.whatsapp.com/send?phone=56964764763&text=Hola%21%20Quisiera%20más%20información"
+                        class="btn whatsapp" target="_blank">WhatsApp Sucursal</a>
                 </div>
 
             </div>
@@ -182,7 +187,8 @@
                 <div class="branch-info">
                     <h3>Los Ángeles</h3>
                     <p>Especialistas en parabrisas, lunetas y vidrios laterales.</p>
-                    <a href="https://api.whatsapp.com/send?phone=56941075314&text=Hola%21%20Quisiera%20más%20información" class="btn whatsapp" target="_blank">WhatsApp Sucursal</a>
+                    <a href="https://api.whatsapp.com/send?phone=56941075314&text=Hola%21%20Quisiera%20más%20información"
+                        class="btn whatsapp" target="_blank">WhatsApp Sucursal</a>
                 </div>
 
             </div>
@@ -199,13 +205,36 @@
                 <div class="branch-info">
                     <h3>Yumbel</h3>
                     <p>Atención rápida con instalación profesional garantizada.</p>
-                    <a href="https://api.whatsapp.com/send?phone=56996687665&text=Hola%21%20Quisiera%20más%20información" class="btn whatsapp" target="_blank">WhatsApp Sucursal</a>
+                    <a href="https://api.whatsapp.com/send?phone=56996687665&text=Hola%21%20Quisiera%20más%20información"
+                        class="btn whatsapp" target="_blank">WhatsApp Sucursal</a>
                 </div>
 
             </div>
 
         </div>
     </section>
+
+    <section id="contact" class="contact">
+    <h2>Contáctanos</h2>
+
+    <form id="contactForm" class="contact-form">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+        <input type="text" id="vehiculo" placeholder="Marca y modelo del vehículo" required>
+
+        <select id="servicio" required>
+            <option value="">Selecciona un servicio</option>
+            <option>Parabrisas</option>
+            <option>Luneta</option>
+            <option>Vidrio de puerta</option>
+            <option>Otro</option>
+        </select>
+
+        <textarea id="mensaje" placeholder="Cuéntanos tu problema..." required></textarea>
+
+        <button type="submit">Solicitar Cotización</button>
+    </form>
+</section>
 
 
     <footer>

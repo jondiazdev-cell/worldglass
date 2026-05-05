@@ -32,6 +32,54 @@ body {
     align-items: center;
 }
 
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .logo {
+        width: 140px; /* más pequeño en móvil */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #0a0a0a;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        border-top: 1px solid #222;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav ul li a {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+}
+
 .logo {
     width: 200px;
     transition: transform 0.3s ease;
@@ -293,4 +341,55 @@ footer {
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
+}
+
+/* CONTACTO */
+.contact {
+    padding: 60px 20px;
+    background: #0a0a0a;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #39ff14;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #111;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    background: #39ff14;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #2ecc0f;
 }
